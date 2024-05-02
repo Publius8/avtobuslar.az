@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+  <title></title>
+    <link rel="canonical" href="https://codepen.io/mohan-aiyer/pen/bGxrpoN" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css'>
+<script src="js/jquery-3.6.3.min.js"></script>
+
+
+<style>
+#myCarousel {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+#myCarousel .f-carousel__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+
+<script>
+  window.console = window.console || function(t) {};
+
+    var p_url=location.search.substring(1);
+//alert("LOADED: "+p_url);
+
+</script>
+
+
+
+</head>
+
+<body translate="no">
+
+  <div>
+      <div class="f-carousel" id="myCarousel">
+        <div class="f-carousel__slide" data-thumb-src="images/bus/Article_172189_860_575.jpg">
+          <a href="images/bus/Article_172189_860_575.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/Article_172189_860_575.jpg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/mitsubishi-pajero-final2.jpeg">
+          <a href="images/bus/mitsubishi-pajero-final2.jpeg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/mitsubishi-pajero-final2.jpeg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/mitsubishi-pajero-sport-2021-front-seats-319840.jpg">
+          <a href="images/bus/mitsubishi-pajero-sport-2021-front-seats-319840.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/mitsubishi-pajero-sport-2021-front-seats-319840.jpg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/Pajero Interior.jpg">
+          <a href="images/bus/Pajero Interior.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/Pajero Interior.jpg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/prado_23454.jpg">
+          <a href="images/bus/prado_23454.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/prado_23454.jpg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/prado_rgnhogr.jpg">
+          <a href="images/bus/prado_rgnhogr.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/prado_rgnhogr.jpg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/Toyota-Land-Cruiser-Prado-Interior-127839.jpg">
+          <a href="images/bus/Toyota-Land-Cruiser-Prado-Interior-127839.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/Toyota-Land-Cruiser-Prado-Interior-127839.jpg" /></a>
+        </div>
+        <div class="f-carousel__slide" data-thumb-src="images/bus/another_prado.jpg">
+          <a href="images/bus/another_prado.jpg" data-fancybox="gallery">
+              <img width="640" height="480" alt="" data-lazy-src="images/bus/another_prado.jpg" /></a>
+        </div>
+
+      </div>
+    </div>
+
+<script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js'></script>
+      <script id="rendered-js" >
+const container = document.getElementById("myCarousel");
+const options = { Dots: false };
+
+new Carousel(container, options, { Thumbs });
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
+//# sourceURL=pen.js
+$(document).ready(function(){
+    $('.f-carousel__slide a img').click();
+});
+
+
+</script>
+
+
+</body>
+
+</html>

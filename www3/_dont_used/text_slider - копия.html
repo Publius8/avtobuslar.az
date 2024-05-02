@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        overflow-x: hidden;
+        font-family: Montserrat,Arial,sans-serif;
+    }
+      #slideeer, .comm_side_table
+{
+	  height: 200px;
+}
+
+#slideeer
+{
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 10px;
+	position: relative;
+	width: 90%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  /* padding: 25px 25px 25px 25px; */
+
+
+  /* scroll-snap-type: x mandatory; */
+  /* -ms-overflow-style: none; */
+}
+
+  /* #slider::-webkit-scrollbar {
+    display: none; }
+    #slider.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    scroll-snap-type: unset; } */
+
+#slideeer li
+{
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 600px;
+	height: 200px;
+}
+
+#slideeer .comm_side_table
+{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .2s linear;
+	-moz-transition: left .2s linear;
+	-o-transition: left .2s linear;
+	-webkit-transition: left .2s linear;
+	margin-left: -25px;
+  font-family: open sans;
+  color: #666;
+}
+
+/*** Content ***/
+
+.slider-container
+{
+  color:#000;
+	margin: 0 auto;
+	padding: 0;
+	width: 99%;
+    min-height: 180px;
+    /* border: 2px solid red; */
+
+  /* text-align:center; */
+
+
+  /* scroll-snap-align: start; 
+  display: flex; */
+}
+
+.slider-container h2
+{
+ 	color: black;
+}
+
+.slider-container  p
+{
+	margin: 10px 25px;
+	font-weight: semi-bold;
+	line-height: 150%;
+  color: black;
+}
+
+.slider-container span {
+  color: black;
+}
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#slideeer .comm_side_table
+{
+	-webkit-animation: slide-animation 20s infinite;
+}
+
+#slideeer .comm_side_table:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+</style>
+<body>
+    <div id="slideeer" class="sliderous">
+        <ul class="comm_side_table">
+          <li>
+          <div class="slider-container">
+            <p>“Went with my wife, absolutely brilliant restaurant, the food tasted beautiful, so much depth and very well presented. As good if not better than any in the city centre. Will definitely be returning.” <br> Nathaniel Harwood – Google</p>  
+            <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+            <span style="position: absolute;right: 380px;bottom: 50px;">Some client names</span>
+          </div>
+          </li>
+          
+          
+            <li>
+            <div class="slider-container">
+            <p>“Great friendly service, the staff don't make you feel rushed, but are also very attentive, and on hand all the time if needed, best Thai food I have had in years, flavours are out of this world, and extremely good prices for the quality you get is top notch!!!!!! Love it” <br>David Armstrong - Porter – Google</p>
+            <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+            <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+          </div>
+          </li>
+            <li>
+            <div class="slider-container">
+            <p>“Possibly one of the best in Manchester. A menu designed and prepared by a very skilled chef, ably assisted by his wife who provides a friendly welcome. Always consistent and of high quality.” <br>Paul Fletcher – Google</p>
+            <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+            <span style="position: absolute;right: 380px;bottom: 50px;">Some client names</span>
+          </div>
+          </li>
+            <li>
+            <div class="slider-container">
+            <p>“Food was amazing and service could not have been better...we went for a quick lunch as our office is opposite the restaurant...very quick service...I am highly recommending this restaurant to all my family and friends...” <br>Nic Gent – Facebook Page</p>
+            <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+            <span style="position: absolute;right: 380px;bottom: 50px;">Some client names</span>
+          </div>
+          </li>
+           <li>
+            <div class="slider-container">
+            <p>“Went for the first time last night for my Husbands Birthday, friendly staff, very tasty food, would highly recommend, we will be back.” <br>Joanne Simms – Facebook Page</p>
+            <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+            <span style="position: absolute;right: 380px;bottom: 50px;">Some client names</span>
+          </div>
+          </li>
+           <li>
+            <div class="slider-container">
+            <p>“A lovely, well decorated restaurant, where great food is served by very friendly staff for a bargain price. The food is authentic and delicious. We'll definitely be returning.”<br>Joe H – Trip Advisor</p>
+            <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+            <span style="position: absolute;right: 380px;bottom: 50px;">Some client names</span>
+          </div>
+          </li>
+        </ul>
+        </div>
+        <script>
+       let sliderContainer = document.querySelector('.sliderous');
+let innerSlider = document.querySelector('.comm_side_table');
+
+let pressed = false;
+let startX;
+let x;
+sliderContainer.addEventListener("mousedown", (e) => {
+    pressed = true;
+    startX = e.offsetX - innerSlider.offsetLeft;
+    sliderContainer.style.cursor = "grabbing";
+});
+sliderContainer.addEventListener("mouseup", () => {
+    sliderContainer.style.cursor = "grab";
+    pressed = false;
+});
+sliderContainer.addEventListener("mousemove", (e) => {
+    if (!pressed) return;
+    e.preventDefault();
+
+    x = e.offsetX;
+
+    innerSlider.style.left = `${x - startX}px`;
+});
+
+        </script>
+</body>
+</html>

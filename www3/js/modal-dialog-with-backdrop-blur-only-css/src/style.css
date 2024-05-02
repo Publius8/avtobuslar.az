@@ -1,0 +1,62 @@
+:root {
+	--vs-primary: 29 92 255;
+}
+/*Dialog Styles*/
+dialog {
+	padding: 1rem 3rem;
+	background: white;
+	max-width: 400px;
+	padding-top: 2rem;
+	border-radius: 20px;
+	border: 0;
+	box-shadow: 0 5px 30px 0 #000;
+	animation: fadeIn 1s ease both;
+}
+dialog::backdrop {
+	animation: fadeIn 1s ease both;
+	background: #000;
+	z-index: 2;
+	backdrop-filter: blur(20px);
+}
+dialog .x {
+	filter: grayscale(1);
+	border: none;
+	background: none;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	transition: ease filter, transform 0.3s;
+	cursor: pointer;
+	transform-origin: center;
+}
+dialog .x:hover {
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+/*General Styles*/
+button.primary {
+	display: inline-block;
+	font-size: 0.8rem;
+	color: #fff !important;
+	background: #000;
+	padding: 13px 25px;
+	border-radius: 17px;
+	transition: background-color 0.1s ease;
+	box-sizing: border-box;
+	transition: all 0.25s ease;
+	border: 0;
+	cursor: pointer;
+	box-shadow: 0 10px 20px -10px #000;
+}
+button.primary:hover {
+	box-shadow: 0 20px 20px -10px #000;
+	transform: translateY(-5px);
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+   }
+	to {
+		opacity: 1;
+   }
+}

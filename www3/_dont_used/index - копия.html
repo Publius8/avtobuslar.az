@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avtobuslar.az</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+    	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	    <link rel="apple-touch-icon" href="/favicon.png">
+<!--
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+//-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <style>
+        /* .fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }  */
+
+  .form-group {
+    width: 300px;
+    height: 75px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.control-label {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    transform: translate3d(0, 22px, 0) scale(1);
+    transform-origin: left top;
+    transition: 240ms;
+    line-height: 29px;
+}
+
+.form-group.focused .control-label {
+    opacity: 1;
+    transform: scale(0.75);
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form-control {
+    align-self: flex-end;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: transparent;
+    transition: 240ms;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    transition: none;
+}
+
+.form-group.focused .form-control::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+
+
+/* CSS from Bootstrap Start */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 37px;
+  padding: 6px 16px;
+  font-size: 14px;
+  line-height: 1.846;
+  color: #666666;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: navy;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control::-moz-placeholder {
+  color: #bbbbbb;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+.form-control::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: transparent;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+textarea.form-control {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  -webkit-box-shadow: inset 0 -2px 0 navy;
+  box-shadow: inset 0 -2px 0 navy;
+}
+
+
+select,
+select.form-control {
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 0;
+  padding-right: 0\9;
+
+  -webkit-background-size: 13px 13px;
+          background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-box-shadow: inset 0 -1px 0 #dddddd;
+  box-shadow: inset 0 -1px 0 #dddddd;
+  font-size: 16px;
+  line-height: 1.5;
+}
+select::-ms-expand,
+select.form-control::-ms-expand {
+  display: none;
+}
+select.input-sm,
+select.form-control.input-sm {
+  font-size: 12px;
+}
+select.input-lg,
+select.form-control.input-lg {
+  font-size: 17px;
+}
+select:focus,
+select.form-control:focus {
+  -webkit-box-shadow: inset 0 -2px 0 navy;
+  box-shadow: inset 0 -2px 0 navy;
+
+}
+select[multiple],
+select.form-control[multiple] {
+  background: none;
+}
+
+
+/* Modal page settings start */
+/*
+:root {
+     --vs-primary: 29 92 255;
+}
+*/
+/*Dialog Styles*/
+ dialog {
+    position:fixed;
+    top:35%;
+    left:5%;
+    padding: 1rem 3rem;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 grey;
+    animation: fadeIn 1s ease both;
+    z-index: 10000;
+}
+ dialog::backdrop {
+     animation: fadeIn 1s ease both;
+     background: grey;
+     backdrop-filter: blur(100px);
+     z-index: 500000;
+}
+ dialog .x {
+     filter: grayscale(1);
+     border: none;
+     background: none;
+     position: absolute;
+     top: 15px;
+     right: 10px;
+     transition: ease filter, transform 0.3s;
+     cursor: pointer;
+     transform-origin: center;
+}
+ dialog .x:hover {
+     filter: grayscale(0);
+     transform: scale(1.1);
+}
+/* Modal page settings end */
+
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 
+
+
+  .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  }
+  @keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  }
+
+
+    </style>
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/bus_logo3.gif" alt="avtobuslar.az" title="avtobuslar.az" style="width:auto; height:45px;" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right;">
+                        <ul class="nav" id="top-navigation" style="float:left; margin-right: 200px;">
+                            <li class="active"><a href="#home">Əsas</a></li>
+                            <li><a href="#service">Xidmətlər</a></li>
+                            <li><a href="#choise" class="order">Sifariş</a></li>
+                            <li><a href="#portfolio">Nəqliyyat</a></li>
+                            <li><a href="#about">Haqqımızda</a></li>
+                            <li><a href="#clients">Müştərilər</a></li>
+<!--
+                            <li><a href="#price" class="order">Order</a></li>
+//-->
+                            <li><a href="#contact">Əlaqə</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tools1">
+                        <span style="display:inline-block; margin-right:15px; width:180px;">
+                        <img src="images/icons8-delivery-time-64.png" style="width: 48px; height: 48px; float:left;">
+                        <span><b>Iş saatları</b><br />Hər gün: 09:00 - 20:00</span>
+                        </span>
+                        <span style="display:inline-block; width:180px;">
+                        <img src="images/icons8-call-64.jpg" style="width: 48px; height: 48px;  float:left;">
+                        <span><b>Zəng üçün</b><br />+994 55 636 63 33</span>
+                        </span>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Start home section -->
+        <div id="home" style="overflow:hidden;">
+            <iframe src="./wide_carousel.html" title="description" marginwidth="0" marginheight="0" border="0" frameborder="0" scrolling="auto" framespacing="0" class="frame_carousel"></iframe>
+        </div>
+        <!-- End home section -->
+
+        <!-- Service section start -->
+        <div class="section primary-section" id="service"
+        style="
+        background-image: url('/images/img/touristic-buses-1024x608.jpg'); background-repeat: no-repeat; background-size: cover;
+        background-color: rgba(61, 73, 141, 0.8);
+        background-blend-mode: multiply;
+        margin-top:-5px;">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="title">
+                    <h1>Göstərdiyimiz xidmətlər</h1>
+                    <!-- Section's title goes here -->
+                    <p>Yüksək səviyyəli xidmətlərimizdən buyurub yararlana bilərsiniz</p>
+                    <!--Simple description for section goes here. -->
+                </div>
+                <div class="row-fluid" id="very_unique_animation">
+                    <div class="mobil_med">
+                        <div class="first_card_line" id="anima_square">
+                            <div class="square">
+                                <div style="margin-top: 5px;">
+                                <img src="images/icons8-bus_school-64.png" style="width: 48px; height: 48px;">
+                                <h2 class="h2_stylus">Məktəb avtobusunun icarəsi</h2>
+                                <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos neque perspiciatis deserunt commodi explicabo nisi?</p>
+                                </div>
+                            </div>
+                            <div class="square">
+                                <div style="margin-top: 5px;">
+                                    <img src="images/icons8-diamond-50.png" style="width: 48px; height: 48px;">
+                                    <h2 class="h2_stylus">Wedding Guests</h2>
+                                    <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos neque perspiciatis deserunt commodi explicabo nisi?</p>
+                                    </div>
+                            </div>
+                            <div class="square">
+                                <div style="margin-top: 5px;">
+                                    <img src="images/icons8-suitcase-64.png" style="width: 48px;height: 48px;">
+                                    <h2 class="h2_stylus">Korporativ Səyahətçilər</h2>
+                                    <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos neque perspiciatis deserunt commodi explicabo nisi?</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobil_med2">
+                        <div class="second_card_line" id="anima_square2">
+                            <div class="square">
+                                <div style="margin-top: 5px;">
+                                    <img src="images/icons8-backpack-64.png" style="width: 48px; height: 48px;">
+                                    <h2 class="h2_stylus">Şəxsi Səyahətçilər</h2>
+                                    <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos neque perspiciatis deserunt commodi explicabo nisi?</p>
+                                    </div>
+                            </div>
+                            <div class="square">
+                                <div style="margin-top: 5px;">
+                                    <img src="images/icons8-airplane-take-off-64.png" style="width: 48px; height: 48px;">
+                                    <h2 class="h2_stylus">Hava Limanı Servisləri</h2>
+                                    <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos neque perspiciatis deserunt commodi explicabo nisi?</p>
+                                    </div>
+                            </div>
+                            <div class="square">
+                                <div style="margin-top: 5px;">
+                                    <img src="images/icons8-bus-4548.png">
+                                    <h2 class="h2_stylus">Turlar və Ekskursiyalar</h2>
+                                    <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos neque perspiciatis deserunt commodi explicabo nisi?</p>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Service section start -->
+        <div class="section secondary-section" id="choise" style="padding:0;">
+            <center>
+            <div class="container shadow" style="margin:0;">
+                <div class="zatupa1">
+
+                <div class="topblock">
+
+                    <div class="call1">
+                        <h2 style="margin-bottom:25px;">İndi zəng et!</h2>
+                    <p style="margin-bottom:25px;margin-top: 50px;">
+                        <img src="images/icons8-call-64.jpg" style="float:left;">
+                        <span>Daha ətraflı məlumat üçün
+                        <br>+994 55 636 63 33</span>
+                    </p>
+                    <p style="margin-top: 100px;">
+                        <img src="images/icons8-delivery-time-64.png" style="float:left;">
+                        <span>Iş saatları
+                        <br>Hər gün: 09:00 - 20:00</span>
+                    </p>
+                    </div>
+
+                    <div class="tools2">
+                        <h1>Sizə uyğun nəqliyyat vasitəsi</h1>
+                        <form>
+                            <input type="hidden" id="recaptchaResp_car">
+                            <div class="zatupa2">
+
+                            <div class="form-group">
+                                <label class="control-label" for="selectCtrl">İstiqaməti seç</label>
+                                 <select  id="tourlist" name="fromPlace" type="text" class="form-control" id="selectCtrl" style="border: none; border-bottom: black 1px solid; font-size: 20px; left: 0; color: black; margin-top: 39.5px; width: 100%;">
+                                    <option class="firts_option" value="">İstiqaməti seç</option>
+                                    <option value="Airport Transfer">Airport Transfer</option>
+                                    <option value="1 Day in Baku City (10 hours)">1 Day in Baku City (10 hours)</option>
+                                    <option value="Absheron Peninsula">Absheron Peninsula Absheron-City tour</option>
+                                    <option value="Absheron-City tour">Absheron-City tour</option>
+                                    <option value="Gobustan tour">Gobustan tour</option>
+                                    <option value="Gobustan-City tour">Gobustan-City tour</option>
+                                    <option value="Gobustan-Absheron">Gobustan-Absheron</option>
+                                    <option value="Gobustan-Absheron-City tour">Gobustan-Absheron-City tour</option>
+                                    <option value="Baku-Shamakhi-Baku">Baku-Shamakhi-Baku</option>
+                                    <option value="Baku-Guba-Baku">Baku-Guba-Baku</option>
+                                    <option value="Baku-Shahdagh-Baku">Baku-Shahdagh-Baku</option>
+                                    <option value="Baku-Lahij-Baku">Baku-Lahij-Baku</option>
+                                    <option value="Baku-Gabala-Baku">Baku-Gabala-Baku</option>
+                                    <option value="Baku-Lenkoran-Baku">Baku-Lenkoran-Baku</option>
+                                    <option value="Baku-Sheki-Baku">Baku-Sheki-Baku</option>
+                                    <option value="Baku-Ganja-Baku">Baku-Ganja-Baku</option>
+                                    <option value="Baku-Astara-Baku">Baku-Astara-Baku</option>
+                                    <option value="Baku-Gakh-Baku">Baku-Gakh-Baku</option>
+                                    <option value="Baku-Zagatala-Baku">Baku-Zagatala-Baku</option>
+                                    <option value="Baku-Red Bridge-Baku">Baku-Red Bridge-Baku</option>
+                                    <option value="1 extra day in another city including feeding and lodging">1 extra day in another city including feeding and lodging</option>
+                                  </select>
+
+                                <!-- <span class="sptour">
+                                    <input type="text" list="fromList" name="fromPlace" required>
+                                    <label for="text" class="label-name">
+                                        <span class="content-name">
+                                        Tour
+                                        </span>
+                                      </label>
+                                      <datalist id="fromList">
+                                     </datalist>
+                                </span> -->
+
+                              </div>
+
+                              <!-- <div class="formas">
+                                <input type="text" list="toList" name="toPlace" required>
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                    To
+                                    </span>
+                                  </label>
+                                <datalist id="toList">
+                                    <option value="Location 1">Location 1</option>
+                                    <option value="Location 2">Location 2</option>
+                                    <option value="Location 3">Location 3</option>
+                                    <option value="Location 4">Location 4</option>
+                                 </datalist>
+                              </div> -->
+
+                                <div class="formas">
+                                    <input type="text" name="seat" id="seatval" maxlength="2" data-min="1" data-max="48" placeholder="" HTMLautocomplete="off" required />
+                                    <label for="text" class="label-name">
+                                        <span class="content-name">
+                                            Adam sayı
+                                        </span>
+                                    </label>
+                                </div>
+
+                        </div>
+                    <div class="zatupa2">
+
+                            <!-- <div class="formas">
+                                <input type="date" name="startDate" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                <span class="content-name">
+                                        Start Date
+                                </span>
+                                </label>
+                        </div>
+
+
+                            <div class="formas">
+                                <input type="date" name="endDate" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                <span class="content-name">
+                                    End Date
+                                </span>
+                                </label>
+                            </div> -->
+                            <div class="func_butt1">
+                            <div id="recap_choose_car" style="margin:15px 0 15px 0; width:auto;"></div>
+                            <input id="press_me" type="button" value="İrəli" class="sub03" disabled>
+                            <button type="reset" class="cleaner" id="cleaner1" style="margin-top: 15px;">Təmizlə</button>
+                            </div>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        <div id="hide_one">
+            <div class="container" style="margin-top: 50px;">
+                <div id="single-project2">
+<!-- ------------------------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------------------------- -->
+                </div>
+            </div>
+        </div>
+        <!-- Service section end -->
+
+
+
+
+        <!-- Price section start -->
+
+        <div id="price" class="section secondary-section">
+
+            <div class="container">
+                <div class="title">
+                    <h1>Sifariş rezervasiyası</h1>
+                    <p>Sifariş üçün məlumatlarınızı daxil edin ( mail və note bölmələri vacib deyil )</p>
+                </div>
+
+
+            <form name="frmorder">
+                <input type="hidden" name="total_ammount" value="" />
+                <input type="hidden" name="for_days" value="" />
+                <input type="hidden" id="recaptchaResp_order">
+
+                <div class="price-table row-fluid" style="position: relative;">
+                    <div class="span4 price-column" style="display: inline;">
+
+                    <div class="formas">
+                        <input type="text" name="first_name" autocomplete="off" required />
+                        <label for="text" class="label-name">
+                        <span class="content-name">
+                            Ad
+                        </span>
+                        </label>
+                    </div>
+                    <div class="formas">
+                        <input type="date" name="start_date" autocomplete="off" required />
+                        <label for="text" class="label-name">
+                        <span class="content-name">
+                            Gediş tarixi:
+                        </span>
+                        </label>
+                    </div>
+                    <div class="formas">
+                        <input id="number_line" type="tel" maxlength="10" name="phone_number" style="font-size: 20px;" autocomplete="off" required />
+                        <label for="text" class="label-name">
+                        <span class="content-name">
+                            Mobil nömrə
+                        </span>
+                        </label>
+                    </div>
+                    <!-- <div class="formas">
+                        <input type="text" list="exampleList" name="transport" required>
+                        <label for="text" class="label-name">
+                            <span class="content-name">
+                            Transport
+                            </span>
+                        </label>
+                        <datalist id="exampleList">
+                        <option value="A">
+                        <option value="B">
+                        </datalist>
+                    </div> -->
+
+                    </div>
+                    <div class="span4 price-column" style="display: inline;">
+
+                            <div class="formas">
+                                <input type="text" name="last_name" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                  <span class="content-name">
+                                    Soyad
+                                  </span>
+                                </label>
+                              </div>
+                              <div class="formas">
+                                <input type="date" name="end_date" autocomplete="off" required />
+                                <label for="text" class="label-name">
+                                  <span class="content-name">
+                                    Gəliş tarixi:
+                                  </span>
+                                </label>
+                              </div>
+                             <div class="formas">
+                                <input id="email" type="email" name="email_addr" autocomplete="off" style="font-size: 20px;" required />
+                                <label for="text" class="label-name">
+                                  <span class="content-name">
+                                    Elektron poçt
+                                  </span>
+                                </label>
+                              </div>
+                              <!-- <div class="formas">
+                                <input type="text" list="exampleList" name="transport" required>
+                                <label for="text" class="label-name">
+                                    <span class="content-name">
+                                    Trip way
+                                    </span>
+                                  </label>
+                                <datalist id="exampleList">
+                                   <option value="A">
+                                   <option value="B">
+                                 </datalist>
+                              </div> -->
+
+                </div>
+
+                <p>&nbsp;</p>
+                <div class="divtxt" style="display: inline-block;">
+                <div id="recap_send_order" style="margin:15px 0 15px 0; width:auto;"></div>
+                <label style="color: black;">İstəylərinizi bildirin:</label>
+                <textarea class="frmtxt" name="note_text" id="note_text"></textarea>
+                </div>
+                <br>
+                <div class="func_butt">
+                <input type="button" id="finish_order" value="Sifarişi bitir" class="sub01" disabled="disabled">
+                <button type="reset" class="cleaner" id="cleaner2" style="margin-top: 2px;">Təmizlə</button>
+                </div>
+                <div class="calc">
+                    <h3 style="color: navy;">Selected options</h3><div style="height: 2px; width: 300px; background-color: black;"></div>
+                    <span id="param_vehicle" style="display:none;">vehicle</span>
+                    <h3>Təsviri</h3>
+                    <span id="param_description">description</span><br />
+                    <h3>Istiqamət</h3>
+                    <span id="param_destination">destination</span><br />
+                    <h3>Seat</h3>
+                    <span id="param_seat">seat</span><br />
+                    <h3>Qiymət</h3>
+                    <span id="param_price">price</span><br />
+                    <div class="lineDiv"></div>
+                    <div>
+                        <h3>Total price</h3>
+                        <span id="total_price">___</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+
+</div>
+
+            </div>
+
+        <!-- Price section end -->
+
+
+
+
+        <!-- Portfolio section start -->
+        <div class="section secondary-section " id="portfolio">
+            <div class="container">
+                <div class=" title">
+                    <h1>Nəqliyyat vasitələrimizlə tanış olun</h1>
+                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#noAction">Hamısı</a>
+                    </li>
+                    <li class="filter" data-filter="sedan">
+                        <a href="#noAction">Sedan</a>
+                    </li>
+                    <li class="filter" data-filter="suv">
+                        <a href="#noAction">Suv</a>
+                    </li>
+                    <li class="filter" data-filter="minivan">
+                        <a href="#noAction">Miniven</a>
+                    </li>
+                    <li class="filter" data-filter="minibus">
+                        <a href="#noAction">Minibus</a>
+                    </li>
+                    <li class="filter" data-filter="bus">
+                        <a href="#noAction">Avtobus</a>
+                    </li>
+                </ul>
+                <!-- Start details for portfolio project 1 -->
+                <div id="single-project">
+                    <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Economy</div>
+                                    <div>
+                                        <span>Növü: </span>Economy</div>
+                                    <div>
+                                        <span>Adam sayı: </span>4</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 1 -->
+                    <!-- Start details for portfolio project 2 -->
+                    <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>SUV 4x4 Prado/Pajero</div>
+                                    <div>
+                                        <span>Növü: </span>SUV</div>
+                                    <div>
+                                        <span>Adam sayı: </span>6</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.coms</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, vel!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 2 -->
+                    <!-- Start details for portfolio project 3 -->
+                    <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Mercedes E-class W212</div>
+                                    <div>
+                                        <span>Növü: </span>Sedan</div>
+                                    <div>
+                                        <span>Adam sayı: </span>4</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, perspiciatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 3 -->
+                    <!-- Start details for portfolio project 4 -->
+                    <div id="slidingDiv4" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Mercedes S-class W222</div>
+                                    <div>
+                                        <span>Date</span>(2016-2019)</div>
+                                    <div>
+                                        <span>Adam sayı: </span>4</div>
+                                    <div>
+                                        <span>Növü: </span>Sedan</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, perferendis?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 4 -->
+                    <!-- Start details for portfolio project 5 -->
+                    <div id="slidingDiv5" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Mercedes S-class W222</div>
+                                    <div>
+                                        <span>Date</span>(2020)</div>
+                                    <div>
+                                        <span>Adam sayı: </span>4</div>
+                                    <div>
+                                        <span>Növü: </span>Sedan</div>
+                                </div>
+                                <p>We need to give each other the space to grow, to be ourselves, to exercise our diversity. We need to give each other space so that we may both give and receive such beautiful things as ideas, openness, dignity, joy, healing, and inclusion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 5 -->
+                    <!-- Start details for portfolio project 6 -->
+                    <div id="slidingDiv6" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Mercedes S-class W223</div>
+                                    <div>
+                                        <span>Date</span>(2021-2023)</div>
+                                    <div>
+                                        <span>Adam sayı: </span>4</div>
+                                    <div>
+                                        <span>Növü: </span>Sedan</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for portfolio project 6 -->
+
+                    <div id="slidingDiv7" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Minivan Mercedes Viano/Vito</div>
+                                    <div>
+                                        <span>Növü: </span>Minivan</div>
+                                    <div>
+                                        <span>Adam sayı: </span>6</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv8" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Minivan Mercedes V-class</div>
+                                    <div>
+                                        <span>Date</span>(2016-2020)</div>
+                                    <div>
+                                        <span>Adam sayı: </span>6</div>
+                                    <div>
+                                        <span>Növü: </span>Minivan</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv9" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Minivan Mercedes V-class</div>
+                                    <div>
+                                        <span>Date</span>(2021-2023)</div>
+                                    <div>
+                                        <span>Adam sayı: </span>6</div>
+                                    <div>
+                                        <span>Növü: </span>Minivan</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv10" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Minibus Mercedes Sprinter VIP</div>
+                                    <div>
+                                        <span>Növü: </span>Minibus</div>
+                                    <div>
+                                        <span>Adam sayı: </span>8</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv11" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Minibus Mercedes Sprinter</div>
+                                    <div>
+                                        <span>Növü: </span>Minibus</div>
+                                    <div>
+                                        <span>Adam sayı: </span>12-20</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv12" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Isuzu Bus</div>
+                                    <div>
+                                        <span>Növü: </span>Bus</div>
+                                    <div>
+                                        <span>Adam sayı: </span>27</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv13" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Mercedes 403 Bus</div>
+                                    <div>
+                                        <span>Növü: </span>Bus</div>
+                                    <div>
+                                        <span>Adam sayı: </span>45</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv14" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Mercedes Travego</div>
+                                    <div>
+                                        <span>Növü: </span>Bus</div>
+                                    <div>
+                                        <span>Adam sayı: </span>45-48</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slidingDiv15" class="toggleDiv row-fluid single-project">
+                        <div class="span6" id="ifrm">
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Nəqliyyat haqqında</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Adı: </span>Neoplan Cityliner</div>
+                                    <div>
+                                        <span>Növü: </span>Bus</div>
+                                    <div>
+                                        <span>Adam sayı: </span>45-48</div>
+                                    <div>
+                                        <span>Link</span>http://mermer.com</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, a.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix minivan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Economy.jpg" alt="project 1">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv1">
+                                    <i class="icon-plus" id="Economy" rel="slidingDiv1"></i>
+                                </a>
+                                <h3>Economy</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix suv">
+                            <div class="thumbnail">
+                                <img src="images/bus/SUV_4x4_Prado_Pajero.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv2">
+                                    <i class="icon-plus" id="SUV_4x4_Prado_Pajero" rel="slidingDiv2"></i>
+                                </a>
+                                <h3>SUV 4x4 Prado/Pajero</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix sedan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Mercedes_E-class_W212.jpg" alt="project 4">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                                    <i class="icon-plus" id="Mercedes_E-class_W212" rel="slidingDiv3"></i>
+                                </a>
+                                <h3>Mercedes E-class W212</h3>
+                                <p>Thumbnail caption...</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix sedan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Mercedes_S-class_W222_2016-2019.jpg" alt="project 5">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                                    <i class="icon-plus" id="Mercedes_S-class_W222_2016-2019" rel="slidingDiv4"></i>
+                                </a>
+                                <h3>Mercedes S-class W222</h3>
+                                <p>(2016-2019)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix sedan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Mercedes_S-class_W222_2020.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                                    <i class="icon-plus" id="Mercedes_S-class_W222_2020" rel="slidingDiv5"></i>
+                                </a>
+                                <h3>Mercedes S-class W222</h3>
+                                <p>(2020)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix sedan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Mercedes_S-class_W223_2021-2023.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                                    <i class="icon-plus" id="Mercedes_S-class_W223_2021-2023" rel="slidingDiv6"></i>
+                                </a>
+                                <h3>Mercedes S-class W223</h3>
+                                <p>(2021-2023)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix minivan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Minivan_4-6_seats_Mercedes_Viano_Vito.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                                    <i class="icon-plus" id="Minivan_4-6_seats_Mercedes_Viano_Vito" rel="slidingDiv7"></i>
+                                </a>
+                                <h3>Minivan Mercedes Viano/Vito</h3>
+                                <p>(4-6 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix minivan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Minivan_4-6_seats_Mercedes_V-class_2016-2020.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                                    <i class="icon-plus" id="Minivan_4-6_seats_Mercedes_V-class_2016-2020" rel="slidingDiv8"></i>
+                                </a>
+                                <h3>Minivan Mercedes V-class</h3>
+                                <p>(4-6 seats); (2016-2020)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix minivan">
+                            <div class="thumbnail">
+                                <img src="images/bus/Minivan_4-6_seats_Mercedes_V-class_2021-2023.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv9">
+                                    <i class="icon-plus" id="Minivan_4-6_seats_Mercedes_V-class_2021-2023" rel="slidingDiv9"></i>
+                                </a>
+                                <h3>Minivan Mercedes V-class</h3>
+                                <p>(4-6 seats); (2021-2023)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix minibus">
+                            <div class="thumbnail">
+                                <img src="images/bus/Minibus_Mercedes_Sprinter_VIP_8_seats.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv10">
+                                    <i class="icon-plus" id="Minibus_Mercedes_Sprinter_VIP_8_seats" rel="slidingDiv10"></i>
+                                </a>
+                                <h3>Minibus Mercedes Sprinter VIP</h3>
+                                <p>(8 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix minibus">
+                            <div class="thumbnail">
+                                <img src="images/bus/Minibus_Mercedes_Sprinter_12-20_seats.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv11">
+                                    <i class="icon-plus" id="Minibus_Mercedes_Sprinter_12-20_seats" rel="slidingDiv11"></i>
+                                </a>
+                                <h3>Minibus Mercedes Sprinter</h3>
+                                <p>(12-20 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix bus">
+                            <div class="thumbnail">
+                                <img src="images/bus/Isuzu_Bus_27_seats.jpg" alt="project 2">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv12">
+                                    <i class="icon-plus" id="Isuzu_Bus_27_seats" rel="slidingDiv12"></i>
+                                </a>
+                                <h3>Isuzu Bus</h3>
+                                <p>(27 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix bus">
+                            <div class="thumbnail">
+                                <img src="images/bus/Mercedes_403_Bus_45_seats.jpg" alt="project 3">
+                                <a href="#single-project" class="more show_hide" rel="#slidingDiv13">
+                                    <i class="icon-plus" id="Mercedes_403_Bus_45_seats" rel="slidingDiv13"></i>
+                                </a>
+                                <h3>Mercedes 403 Bus</h3>
+                                <p>(45 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix bus">
+                            <div class="thumbnail">
+                                <img src="images/bus/Mercedes_Travego_45-48_seats.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv14">
+                                    <i class="icon-plus" id="Mercedes_Travego_45-48_seats" rel="slidingDiv14"></i>
+                                </a>
+                                <h3>Mercedes Travego</h3>
+                                <p>(45-48 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix bus">
+                            <div class="thumbnail">
+                                <img src="images/bus/Neoplan_Cityliner_45-48_seats.jpg" alt="project 6">
+                                <a href="#single-project" class="show_hide more" rel="#slidingDiv15">
+                                    <i class="icon-plus" id="Neoplan_Cityliner_45-48_seats" rel="slidingDiv15"></i>
+                                </a>
+                                <h3>Neoplan Cityliner</h3>
+                                <p>(45-48 seats)</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section end -->
+        <!-- About us section start -->
+        <div class="section primary-section" id="about">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class="title">
+                    <h1>Biz kimik?</h1>
+                    <p style="color: white;">Yüksək səviyyəli nəqliyyat vasitələrinin əsasəndə avtobusların icarəsi və təşkilini sizin üçün yaradan kompaniya</p>
+                </div>
+                <div class="row-fluid team">
+                    <div class="span4" id="first-person">
+                        <div class="thumbnail">
+                            <img src="images/Team1.png" alt="team 1">
+                            <h3>Telman Məmmədov</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Baş Direktor</h2>
+                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="second-person">
+                        <div class="thumbnail">
+                            <img src="images/Team2.png" alt="team 1">
+                            <h3>John Doe</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Designer</h2>
+                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4" id="third-person">
+                        <div class="thumbnail">
+                            <img src="images/Team3.png" alt="team 1">
+                            <h3>John Doe</h3>
+                            <ul class="social">
+                                <li>
+                                    <a href="">
+                                        <span class="icon-facebook-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-twitter-circled"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="icon-linkedin-circled"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="mask">
+                                <h2>Photographer</h2>
+                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text centered">
+                    <h3 style="color: aqua;">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+           <!--             <ul class="skills">
+                            <li>
+                                <span class="bar" data-width="80%"></span>
+                                <h3>Graphic Design</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="95%"></span>
+                                <h3>Html & Css</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="68%"></span>
+                                <h3>jQuery</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="70%"></span>
+                                <h3>Wordpress</h3>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="span6">
+                    <!--    <div class="highlighted-box center">
+                            <h1>We're Hiring</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, ullamcorper suscipit lobortis nisl ut aliquip consequat. I learned that we can do anything, but we can't do everything...</p>
+                            <button class="button button-sp">Join Us</button>   -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us section end -->
+        <div class="section secondary-section">
+            <div class="triangle"></div>
+            <div class="container centered">
+                <p class="large-text">Elegance is not the abundance of simplicity. It is the absence of complexity.</p>
+                <a href="#" class="button orderNow" id="scrlorder">İndi sifariş edin</a>
+            </div>
+        </div>
+        <!-- Client section start -->
+        <!-- Client section start -->
+        <div id="clients">
+            <div class="section primary-section">
+                <div class="triangle"></div>
+                <div class="container">
+                    <div class="title">
+                        <h1>What Client Say?</h1>
+                        <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                    </div>
+                    <div class="row">
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"I've worked too hard and too long to let anything stand in the way of my goals. I will not let my teammates down and I will not let myself down."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/Client1.png" class="centered" alt="client 1">
+                                    <strong>John Doe
+                                        <small>Client</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"In motivating people, you've got to engage their minds and their hearts. I motivate people, I hope, by example - and perhaps by excitement, by having productive ideas to make others feel involved."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/Client2.png" class="centered" alt="client 2">
+                                    <strong>John Doe
+                                        <small>Client</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="testimonial">
+                                <p>"Determine never to be idle. No person will have occasion to complain of the want of time who never loses any. It is wonderful how much may be done if we are always doing."</p>
+                                <div class="whopic">
+                                    <div class="arrow"></div>
+                                    <img src="images/Client3.png" class="centered" alt="client 3">
+                                    <strong>John Doe
+                                        <small>Client</small>
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Perfection is Achieved Not When There Is Nothing More to Add, But When There Is Nothing Left to Take Away"
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section third-section">
+            <div class="container centered">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Bizim müştərilərmiz</h3>
+                        </div>
+                        <ul class="client-nav pull-right">
+                            <li id="client-prev"></li>
+                            <li id="client-next"></li>
+                        </ul>
+                    </div>
+                    <ul class="row client-slider" id="clint-slider">
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo01.png" alt="client logo 1">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo02.png" alt="client logo 2">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo03.png" alt="client logo 3">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo04.png" alt="client logo 4">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo05.png" alt="client logo 5">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo02.png" alt="client logo 6">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/clients/ClientLogo04.png" alt="client logo 7">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Newsletter section start -->
+     <!--      <div class="section third-section">
+            <div class="container newsletter">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Newsletter</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="success-subscribe" class="alert alert-success invisible">
+                    <strong>Well done!</strong>You successfully subscribet to our newsletter.</div>
+                <div class="row-fluid">
+                    <div class="span5">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    <div class="span7">
+                        <form class="inline-form">
+                            <input type="email" name="email" id="nlmail" class="span8" placeholder="Enter your email" required />
+                            <button id="subscribe" class="button button-sp">Subscribe</button>
+                        </form>
+                        <div id="err-subscribe" class="error centered">Please provide valid email address.</div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+        <!-- Newsletter section end -->
+
+
+
+
+
+        <!-- Contact section start -->
+        <div class="section secondary-section" id="contact">
+            <div class="contact" style="background: #3d498d; color: white;">
+                <div class="container">
+                    <div class="title">
+                        <h1 style="color: white;">Bizimlə əlaqə</h1>
+                        <p style="color: white;">Bizimlə əlaqə saxlayaraq öz suallarınıza ətraflı cavab tapa bilərsiniz</p>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map-div">
+
+                        <div class="container" style="width:100%;">
+                            <div class="row-fluid" style="width:100%;">
+                                <div class="span5 contact-form centered conwidth">
+                                    <h3>Rəy bildir</h3>
+                                    <div id="successSend" class="alert alert-success invisible">
+                                        <strong>Well done!</strong>Your message has been sent.</div>
+                                    <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
+                                    <form id="contact-form">
+                                        <input type="hidden" id="recaptchaResp_mess">
+                                        <div class="control-group">
+                                            <div class="controls">
+                                                <input class="span12" type="text" name="msgname" id="msgname" placeholder="* Adınız..." />
+                                                <div class="error left-align" id="err-name">Zəhmət olmasa adınizi qeyd edin.</div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="controls">
+                                                <input class="span12" type="email" name="msgemail" id="msgemail" placeholder="* Elektron poçt ünvanı..." />
+                                                <div class="error left-align" id="err-email">Zəhmət olmasa elektron poçt ünvanınızı qeyd edin.</div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="controls">
+                                                <textarea class="span12" name="msgcomment" id="msgcomment" placeholder="* Rəyiniz..."></textarea>
+                                                <div class="error left-align" id="err-comment">Zəhmət olmasa rəyinizi bildirin.</div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group" id="messer_sent_form" style="display: flex; flex-direction: row; justify-content: center;">
+                                            <div id="recap_send_mess"></div>
+                                            <div class="controls">
+                                                <button id="send-mail" class="message-btn">Göndər</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="map-div">
+
+                        <iframe class="map-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6076.140915471252!2d49.8611778!3d40.4072899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d5ce45461c9%3A0xc70c4e0f5f3f3b6!2sGo%20Travel!5e0!3m2!1sru!2saz!4v1688486962742!5m2!1sru!2saz"
+                         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="span9 center contact-info">
+                        <p>Əhməd Rəcəbli küçəsi 153, Khalili Plaza 1-ci mərtəbə, Bakı 1052</p>
+                        <p class="info-mail" style="color: white;">info@gotravel.az</p>
+                        <p>+994 55 636 63 33</p>
+                        <p>Whatsapp: +994 55 636 63 33</p>
+                        <div class="title">
+                            <h3 style="color: white;">Sosial şəbəkələrimiz</h3>
+                        </div>
+                    </div>
+                    <div class="row-fluid centered">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/www.gotravel.az" target="_blank">
+                                    <!-- <span class="icon-facebook-circled"></span> -->
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/GoTravel_az" target="_blank">
+                                    <!-- <span class="icon-twitter-circled"></span> -->
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/gotravel.az" target="_blank">
+                                    <!-- <span class="icon-linkedin-circled"></span> -->
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="" target="_blank">
+                                     <span class="icon-pinterest-circled"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                     <span class="icon-dribbble-circled"></span>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="https://plus.google.com/u/0/b/107888449636740025342/107888449636740025342" target="_blank">
+                                    <!-- <span class="icon-gplus-circled"></span> -->
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact section edn -->
+
+
+
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2023 Powered by <a href="#!">Mircavad</a>, <a href="#!">Cavad</a></p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+
+
+        <dialog>
+            <h2 style="color:#ff0000;">Thank you for your order</h2>
+            <p style="color: #0000ff;">ORDER SUCCESSFULLY SENT</p>
+            <button onclick="$('dialog').modal('hide');" aria-label="close" class="x">❌</button>
+        </dialog>
+
+
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                var p_url=location.search.substring(1);
+                if(p_url=="ord"){
+                    $('dialog').modal("show");
+                    $('dialog h2').html('Sifarişiniz üçün təşəkkür edirik!');
+                    $('dialog p').html('SİFARİŞİNİZ UĞURLA BAŞA ÇATDI');
+                    window.history.pushState(null, null, "/index.html");
+                }
+                if(p_url=="mess"){
+                    $('dialog').modal("show");
+                    $('dialog h2').html('Mesajınız üçün təşəkkür edirik');
+                    $('dialog p').html('MESAJINIZ UĞURLA GÖNDƏRİLDİ');
+                    window.history.pushState(null, null, "/index.html");
+                }
+
+                $("#finish_order").on( "click", function(event) {
+                    $.ajax({
+                        async: true,
+                        type: 'POST',
+                        cache: false,
+                        url: 'php/mail.php',
+                        data: {
+                            param_vehicle:      $('.calc #param_vehicle').text(),
+                            param_description:  $('.calc #param_description').text(),
+                            param_destination:  $('.calc #param_destination').text(),
+                            param_seat:         $('.calc #param_seat').text(),
+                            param_price:        $('.calc #param_price').text(),
+                            first_name:         $('input[name=first_name]').val(),
+                            last_name:          $('input[name=last_name]').val(),
+                            phone_number:       $('input[name=phone_number]').val(),
+                            email_addr:         $('input[name=email_addr]').val(),
+                            start_date:         $('input[name=start_date]').val(),
+                            end_date:           $('input[name=end_date]').val(),
+                            note_text:          $('#note_text').val(),
+                            total_ammount:      $('input[name=total_ammount]').val(),
+                            for_days:           $('input[name=for_days]').val(),
+                            recaptcharsp:       $('#recaptchaResp_order').val()
+                        },
+                        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+                        dataType: 'html',
+                        processData: true,
+                        beforeSend: function() {
+                        },
+
+                        success: function(data, textStatus) {
+                            datars = jQuery.parseJSON(data);
+                            if(datars.status=="OK"){
+                                document.location = "index.html?ord";
+                            }else if(datars['status']=='reCaptcha=failed'){
+                                $('dialog').modal("show");
+                                $('dialog h2').html(datars['caption']);
+                                $('dialog p').html(datars['content']);
+                            }else if(datars['status']=='method=failed'){
+                                $('dialog').modal("show");
+                                $('dialog h2').html(datars['caption']);
+                                $('dialog p').html(datars['content']);
+                            }
+                        },
+                        error: function(xhr, extStatus, thrownError) {},
+                        statusCode: {
+                                404: function() { }
+                        },
+                        complete: function() {
+                        }
+                    })
+                });
+
+                var start_dt = 0;
+                var end_dt = 0;
+                var days_cnt;
+                var prc = 0.00;
+                $('input[name=start_date]').on( "change", function(event) {
+                    start_dt = new Date($(this).val());
+                    days_cnt = diffDates(start_dt, end_dt);
+                    if(days_cnt>=0){
+                        days_cnt++;
+                        prc = parseFloat($('.calc #param_price').text()) * days_cnt;
+                        prc = new Intl.NumberFormat("en", {style: "currency", currency: "AZN"}).format(prc);
+                        if(start_dt && end_dt){
+                            $('#total_price').text("For "+days_cnt+" days: "+prc);
+                            $('input[name=total_ammount]').val(prc);
+                            $('input[name=for_days]').val(days_cnt);
+                        }
+                    } else $('#total_price').text('0');
+                });
+                $('input[name=end_date]').on( "change", function(event) {
+                    end_dt = new Date($(this).val());
+                    days_cnt = diffDates(start_dt, end_dt);
+                    if(days_cnt>=0){
+                        days_cnt++;
+                        prc = parseFloat($('.calc #param_price').text()) * days_cnt;
+                        prc = new Intl.NumberFormat("en", {style: "currency", currency: "AZN"}).format(prc);
+                        if(start_dt && end_dt){
+                            $('#total_price').text("For "+days_cnt+" days: "+prc);
+                            $('input[name=total_ammount]').val(prc);
+                            $('input[name=for_days]').val(days_cnt);
+                        }
+                    } else $('#total_price').text('0');
+                });
+                function diffDates(day_start, day_end) {
+                    return (day_end - day_start) / (60 * 60 * 24 * 1000);
+                };
+
+                $("#single-project .icon-plus").click(function(){
+                   var idfrm = $(this).attr('id');
+                   var idrel = $(this).attr('rel');
+                      $('div#'+idrel+' div#ifrm').html("<iframe src='imslider_"+idfrm+".html' class='imgsldr' scrolling='no' frameborder='0' frameborder='0' marginheight='0' marginwidth='0' hspace='0' vspace='0'></iframe>");
+                });
+                $("#scrlorder").click(function(){
+                     $('html, body').animate({scrollTop: $("div#price").offset().top}, 300);
+                });
+
+                $.fn.isValid = function(){
+                    return this[0].checkValidity()
+                }
+                $.fn.repValid = function(){
+                    return this[0].reportValidity()
+                }
+
+                var flag1 = true;
+                $("#press_me").on( "click", function(event) {
+                    if(!flag1) return false;
+                    flag1 = false;
+                    $.ajax({
+                        async: true,
+                        type: 'POST',
+                        cache: false,
+                        url: 'php/getdata.php',
+                        data: {
+                            tourlist:   $('#tourlist').val(),
+                            seat:       $('input[name="seat"]').val(),
+                            startDate:  $('input[name="startDate"]').val(),
+                            endDate:    $('input[name="endDate"]').val(),
+                            recaptcharsp: $('#recaptchaResp_car').val()
+                        },
+                        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+                        dataType: 'html',
+                        processData: true,
+                        beforeSend: function() {
+                        },
+                        success: function(data, textStatus) {
+                            datars = jQuery.parseJSON(data);
+                            if(datars.status=="OK"){
+                                $("#single-project2").html(datars['content']);
+                                $('#single-project2 div.toggleDiv').hide();
+                            }else if(datars['status']=='reCaptcha=failed'){
+                                $('dialog').modal("show");
+                                $('dialog h2').html(datars['caption']);
+                                $('dialog p').html(datars['content']);
+                            }else if(datars['status']=='method=failed'){
+                                $('dialog').modal("show");
+                                $('dialog h2').html(datars['caption']);
+                                $('dialog p').html(datars['content']);
+                            }
+                        },
+                        error: function(xhr, extStatus, thrownError) {},
+                        statusCode: {
+                                404: function() { }
+                        },
+                        complete: function() {
+                           $("#hide_one").slideToggle(0);
+                           $("#hide_one").slideToggle('slow');
+                        }
+                    })
+                });
+                $('body').on('input', '#number_line', function(){
+	                this.value = this.value.replace(/[^0-9]/g, '');
+                });
+                $('body').on('input', '#seatval', function(){
+	                this.value = this.value.replace(/[^0-9]/g, '');
+                });
+
+                $("#send-mail").on( "click", function(event) {
+                    if(!$('input[name="msgname"]').val()) return false;
+                    if(!$('input[name="msgemail"]').val()) return false;
+                    if(!$('#msgcomment').val()) return false;
+                    $.ajax({
+                        async: true,
+                        type: 'POST',
+                        cache: false,
+                        url: 'php/message.php',
+                        data: {
+                            msgname:    $('input[name="msgname"]').val(),
+                            msgemail:   $('input[name="msgemail"]').val(),
+                            msgcomment: $('#msgcomment').val(),
+                            recaptcharsp: $('#recaptchaResp_mess').val()
+                        },
+                        contentType: 'application/x-www-form-urlencoded;charset=utf-8',
+                        dataType: 'html',
+                        processData: true,
+                        beforeSend: function() {
+                        },
+                        success: function(data, textStatus) {
+                            datars = jQuery.parseJSON(data);
+                            if(datars.status=="OK"){
+                                document.location = "index.html?mess";
+                            }else if(datars['status']=='reCaptcha=failed'){
+                                $('dialog').modal("show");
+                                $('dialog h2').html(datars['caption']);
+                                $('dialog p').html(datars['content']);
+                            }else if(datars['status']=='method=failed'){
+                                $('dialog').modal("show");
+                                $('dialog h2').html(datars['caption']);
+                                $('dialog p').html(datars['content']);
+                            }
+                        },
+                        error: function(xhr, extStatus, thrownError) {},
+                        statusCode: {
+                                404: function() { }
+                        },
+                        complete: function() {
+                           $("#hide_one").slideToggle(0);
+                           $("#hide_one").slideToggle('slow');
+                           flag1 = true;
+                        }
+                    })
+                });
+
+
+                $('body').on('input', '#seatval', function(){
+                	var value = this.value;
+                	if (value < $(this).data('min')) {
+    //            		this.value = $(this).data('min');
+                	} else if (value > $(this).data('max')) {
+                		this.value = $(this).data('max');
+                	} else {
+                		this.value = value;
+                	}
+                });
+
+
+                const formInput = document.querySelector("#seatval");
+                const formButton = document.querySelector("#press_me");
+                const formInput2 = document.querySelector("#seatval");
+                const formButton2 = document.querySelector("#finish_order");
+                // the default state is 'disabled'
+                formButton.disabled = true;
+                formButton2.disabled = true;
+                // alternative is to use "change" - explained below
+                formInput.addEventListener("keyup", buttonState);
+                function buttonState() {
+                     if (document.querySelector("#seatval, #tourlist").value === "") {
+                         formButton.disabled = true; // return disabled as true whenever the input field is empty
+                     } else {
+                         formButton.disabled = false; // enable the button once the input field has content
+                     }
+                 }
+                formInput.addEventListener("keyup", buttonState2);
+                function buttonState2() {
+                     if (document.querySelector("#seatval, #tourlist, input[name=first_name], input[name=last_name], input[name=start_date], input[name=end_date], input[name=phone_number]").value === "") {
+                         formButton2.disabled = true;
+                     } else {
+                         formButton2.disabled = false;
+                     }
+                 }
+
+                $('body').on('change', '#seatval, #tourlist', function(){
+                    if($('#seatval').val() && $('#tourlist').val()) $( "#press_me" ).prop( "disabled", false );
+                    else $( "#press_me" ).prop( "disabled", true );
+                });
+                $('body').on('change', 'input[name=first_name], input[name=last_name], input[name=start_date], input[name=end_date], input[name=phone_number]', function(){
+                    if($('#seatval').val() && $('#tourlist').val() &&
+                    $('input[name=first_name]').val() && $('input[name=last_name]').val() &&
+                    $('input[name=start_date]').val() && $('input[name=end_date]').val() &&
+                    $('input[name=phone_number]').val()) $( "#finish_order" ).prop( "disabled", false );
+                    else $( "#finish_order" ).prop( "disabled", true );
+                });
+                $('body').on('click', '#cleaner1', function(){
+                    $( "#press_me" ).prop( "disabled", true );
+                });
+                $('body').on('click', '#cleaner2', function(){
+                    $( "#finish_order" ).prop( "disabled", true );
+                });
+
+
+                $('form').on('mouseenter', function () {
+                    clearInterval(slideInterval);
+                });
+
+                $('form').on('mouseleave', function () {
+                    slideInterval = setInterval(nextSlide, 3000);
+                });
+            });
+            $('.form-control').on('focus blur change', function (e) {
+        	var $currEl = $(this);
+
+            if($currEl.is('select')) {
+              	if($currEl.val() === $("option:first", $currEl).val()) {
+                	$('.control-label', $currEl.parent()).animate({opacity: 0}, 240);
+                  $currEl.parent().removeClass('focused');
+                } else {
+                	$('.control-label', $currEl.parent()).css({opacity: 1});
+                	$currEl.parents('.form-group').toggleClass('focused', ((e.type === 'focus' || this.value.length > 0) && ($currEl.val() !== $("option:first", $currEl).val())));
+                }
+            } else {
+              	$currEl.parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+            }
+        }).trigger('blur');
+
+        const validateEmail = (email) => {
+            return email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+        };
+
+        const validate = () => {
+          const email = $('#email').val();
+        };
+
+        $('#email').on('input', validate);
+
+
+        var widgetId_car, widgetId_order;
+        var onloadCallback = function() {
+            var verifyCallback_car = function(response) {
+                var recaptchaResp_car = document.getElementById('recaptchaResp_car');
+                recaptchaResp_car.value = response;
+            };
+            widgetId_car = grecaptcha.render('recap_choose_car', {
+                'sitekey' : '6Ld1OKMnAAAAAPYl0rV_qi6Dpy6exWiG2ZGig2YI',
+                'callback' : verifyCallback_car,
+                'theme' : 'light'
+            });
+            var verifyCallback_order = function(response) {
+                var recaptchaResp_order = document.getElementById('recaptchaResp_order');
+                recaptchaResp_order.value = response;
+            };
+            widgetId_order = grecaptcha.render('recap_send_order', {
+                'sitekey' : '6Ld1OKMnAAAAAPYl0rV_qi6Dpy6exWiG2ZGig2YI',
+                'callback' : verifyCallback_order,
+                'theme' : 'light'
+            });
+            var verifyCallback_mess = function(response) {
+                var recaptchaResp_mess = document.getElementById('recaptchaResp_mess');
+                recaptchaResp_mess.value = response;
+            };
+            widgetId_order = grecaptcha.render('recap_send_mess', {
+                'sitekey' : '6Ld1OKMnAAAAAPYl0rV_qi6Dpy6exWiG2ZGig2YI',
+                'callback' : verifyCallback_mess,
+                'theme' : 'light'
+            });
+
+        };
+
+
+
+    $(document).ready(function(){
+      $(window).scroll(function(event){
+        if(is_shown("#very_unique_animation")){
+            $("#very_unique_animation").removeClass("fadeOut").addClass("fadeIn");
+          } else {
+            $("#very_unique_animation").removeClass("fadeIn").addClass("fadeOut");
+          }
+        });
+    });
+           
+
+
+
+
+        function is_shown(target) {
+	var wt = $(window).scrollTop(); 
+	var wh = $(window).height();    
+	var eh = $(target).outerHeight();  
+	var et = $(target).offset().top;
+	if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)){
+		return true;
+	} else {
+		return false;    
+	}
+}
+ 
+function is_fully_shown(target) {
+	var wt = $(window).scrollTop(); 
+	var wh = $(window).height();    
+	var eh = $(target).height();  
+	var et = $(target).offset().top;
+	if (et >= wt && et + eh <= wh + wt){
+		return true;
+	} else {
+		return false;    
+	}
+}
+
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=ru>" async defer></script>
+
+    </body>
+</html>

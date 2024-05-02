@@ -1,0 +1,18 @@
+$id_conn = new mysqli($bdhost,$dbusr,$dbpwd,$dbname);
+
+$rec = $id_conn->query($sql);
+
+$imgID = $id_conn->insert_id;
+
+$id_conn->errno
+
+$id_conn->error
+
+while($line = $rec->fetch_array())
+
+$rowscnt = $rec->num_rows;
+
+
+$rec->close();
+
+$id_conn->close();

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <title>COMMENT SIDE</title>
+</head>
+<style>
+    body {
+      overflow-x: hidden;
+    }
+    
+    .main_comm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+        height: auto;
+        align-items: center;
+        position: relative;
+        background-image: url('images/diagonal-lines-1.png');
+        padding: 20px;
+    }
+    .image_box_comm {
+        position: relative;
+        width: 700px;
+        height: 500px;
+        margin-right: 20px;
+    }
+
+    img {
+        position: absolute;
+        bottom:10px;
+        right:10px;
+        z-index: 5000
+    }
+    .box_for_apa {
+        position: absolute;
+        z-index: 90000;
+        top: 90px;
+        right: 20px;
+        width: 100%;
+        height: auto;
+    }
+    
+
+
+
+    #slider, ul
+{
+	height: 200px;
+}
+
+#slider
+{
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	margin-top: 10px;
+	position: relative;
+	width: 600px;
+  /* scroll-snap-type: x mandatory; */
+  /* -ms-overflow-style: none; */
+}
+
+  /* #slider::-webkit-scrollbar {
+    display: none; }
+    #slider.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    scroll-snap-type: unset; } */
+
+#slider li
+{
+	float: left;
+	position: relative;
+	width: 600px;
+	display: inline-block;
+	height: 200px;
+}
+
+#slider ul
+{
+	list-style: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 9000px;
+	transition: left .2s linear;
+	-moz-transition: left .2s linear;
+	-o-transition: left .2s linear;
+	-webkit-transition: left .2s linear;
+	margin-left: -25px;
+  font-family: open sans;
+  color: #666;
+}
+
+/*** Content ***/
+
+.slider-container
+{
+  color:#000;
+	margin: 0 auto;
+	padding: 0;
+	width: 550px;
+  min-height: 180px;
+  /* text-align:center; */
+
+
+  /* scroll-snap-align: start; 
+  display: flex; */
+}
+
+.slider-container h2
+{
+ 	color: #fff;
+}
+
+.slider-container  p
+{
+	margin: 10px 25px;
+	font-weight: semi-bold;
+	line-height: 150%;
+}
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:0px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#slider ul
+{
+	-webkit-animation: slide-animation 20s infinite;
+}
+
+#slider ul:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+
+
+
+
+
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInDown {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+
+
+
+  .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  }
+  @keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+  } 
+
+
+
+
+  .fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  
+  .slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+
+
+
+
+
+</style>
+<body>
+    <p style="font-size: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusantium officia consequuntur velit neque, non expedita. Ducimus cupiditate enim in?</p>
+  <div class="main_comm">
+        <div class="image_box_comm">
+            <div class="box_for_apa"><img id="yellow_box_slide" src="images/pngwing.com-removebg-preview.jpg" width="70px" height="70px"></div>
+            <img src="images/man_headphones.jpg" width="700px" height="500px" id="manImage">
+            <div style="height: 500px; width: 700px;background-color: #FF3CAC;
+            background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);"></div>
+        </div>
+        <div class="comm_box_cont">
+            <span>TESTIMONIALS</span>
+            <h1>What are they saying</h1>
+            <span>Placerat libero hendrerit quis habitant lobortis pellentesque tellus.</span>
+            <div id="slider">
+              <ul>
+                <li>
+                <div class="slider-container">
+                  <p>“Went with my wife, absolutely brilliant restaurant, the food tasted beautiful, so much depth and very well presented. As good if not better than any in the city centre. Will definitely be returning.” <br> Nathaniel Harwood – Google</p>  
+                  <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+                  <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+                </div>
+                </li>
+                
+                
+                  <li>
+                  <div class="slider-container">
+                  <p>“Great friendly service, the staff don't make you feel rushed, but are also very attentive, and on hand all the time if needed, best Thai food I have had in years, flavours are out of this world, and extremely good prices for the quality you get is top notch!!!!!! Love it” <br>David Armstrong - Porter – Google</p>
+                  <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+                  <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+                </div>
+                </li>
+                  <li>
+                  <div class="slider-container">
+                  <p>“Possibly one of the best in Manchester. A menu designed and prepared by a very skilled chef, ably assisted by his wife who provides a friendly welcome. Always consistent and of high quality.” <br>Paul Fletcher – Google</p>
+                  <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+                  <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+                </div>
+                </li>
+                  <li>
+                  <div class="slider-container">
+                  <p>“Food was amazing and service could not have been better...we went for a quick lunch as our office is opposite the restaurant...very quick service...I am highly recommending this restaurant to all my family and friends...” <br>Nic Gent – Facebook Page</p>
+                  <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+                  <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+                </div>
+                </li>
+                 <li>
+                  <div class="slider-container">
+                  <p>“Went for the first time last night for my Husbands Birthday, friendly staff, very tasty food, would highly recommend, we will be back.” <br>Joanne Simms – Facebook Page</p>
+                  <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+                  <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+                </div>
+                </li>
+                 <li>
+                  <div class="slider-container">
+                  <p>“A lovely, well decorated restaurant, where great food is served by very friendly staff for a bargain price. The food is authentic and delicious. We'll definitely be returning.”<br>Joe H – Trip Advisor</p>
+                  <img src="images/clients/ClientLogo06.png" width="50px" height="50px" style="margin-right: 500px;">
+                  <span style="position: absolute;right: 380px;bottom: 25px;">Some client names</span>
+                </div>
+                </li>
+              </ul>
+              </div>
+              
+</div>
+
+    </div>
+    <script>
+
+// Script for draggind the elements of slider
+
+// [...document.querySelectorAll('#slider')].forEach((container, n = !1, i = void 0, r = void 0, a = !1, t = 0) => {
+//    container.addEventListener("mousedown", function(e) {
+//       n = !0,
+//       this.classList.add("active")
+//       i = e.pageX - this.offsetLeft,
+//       r = this.scrollLeft
+//    })
+//    container.addEventListener("mouseleave", function(e) {
+//       n = !1,
+//       this.classList.remove("active")
+//    })
+//    container.addEventListener("mouseup", function(e) {
+//       a && (e.preventDefault(), a = !1),
+//       n = !1,
+//       this.classList.remove("active")
+//    })
+//    container.addEventListener("mousemove", function(e) {
+//       var t;
+//       n && (
+//            e.preventDefault(),
+//            t = e.pageX - this.offsetLeft,
+//            t = r - 3 * (t - i),
+//            console.log(e.movementX),
+//            5 < Math.abs(this.scrollLeft - t) && (a = !0),
+//            this.scrollLeft = t
+//       )
+//    })
+// })
+
+// Script for draggind the elements of slider
+
+
+// Scroll from section to section
+
+// wrapper = $(".main_comm");
+// section = $('.section___scroll');
+// size = section.length - 1;
+// current = 0;
+
+// wrapper.bind('mousewheel', function(e){
+//     delta = e.originalEvent.deltaY;
+
+//     if(delta > 1 && current < size){
+//       current++;
+//     }else if(delta < 1 && current > 0){
+//       current--;
+//     }
+  
+//     wrapper.stop().animate({
+//        scrollTop:  wrapper.outerHeight() * current
+//     });
+// })
+
+// Scroll from section to section
+
+
+$(document).ready(function(){
+      $(window).scroll(function(event){
+        if(is_shown("#yellow_box_slide")){
+            $("#yellow_box_slide").removeClass("fadeOut").addClass("fadeInDown");
+          } else {
+            $("#yellow_box_slide").removeClass("fadeInDown").addClass("fadeOut");
+          }
+        });
+    });
+    $(document).ready(function(){
+      $(window).scroll(function(event){
+        if(is_shown("#manImage")){
+            $("#manImage").removeClass("fadeOut").addClass("fadeInLeft");
+          } else {
+            $("#manImage").removeClass("fadeInLeft").addClass("fadeOut");
+          }
+        });
+    });
+    $(document).ready(function(){
+      $(window).scroll(function(event){
+        if(is_shown(".comm_box_cont")){
+            $(".comm_box_cont").removeClass("fadeOut").addClass("slideInRight");
+          } else {
+            $(".comm_box_cont").removeClass("slideInRight").addClass("fadeOut");
+          }
+        });
+    });
+
+
+
+function is_shown(target) {
+	var wt = $(window).scrollTop(); 
+	var wh = $(window).height();    
+	var eh = $(target).outerHeight();  
+	var et = $(target).offset().top;
+	if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)){
+		return true;
+	} else {
+		return false;    
+	}
+}
+ 
+function is_fully_shown(target) {
+	var wt = $(window).scrollTop(); 
+	var wh = $(window).height();    
+	var eh = $(target).height();  
+	var et = $(target).offset().top;
+	if (et >= wt && et + eh <= wh + wt){
+		return true;
+	} else {
+		return false;    
+	}
+}
+
+    </script>
+</body>
+</html>
